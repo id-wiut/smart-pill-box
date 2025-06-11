@@ -1,12 +1,65 @@
-.status-box {
-      border: 1px solid #ccc;
-      border-radius: 12px;
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
       padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      background: #f4f4f4;
     }
-    .status {
-      font-size: 1.2rem;
+
+    h1 {
+      color: #2e7d32;
     }
-    .badge-green { background-color: #28a745; }
-    .badge-red { background-color: #dc3545; }
+
+    .dashboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    #humidityGauge {
+      max-width: 150px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #1b5e20;
+    }
+
+    .info-box {
+      font-size: 18px;
+      padding: 12px 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: fit-content;
+      max-width: 90%;
+    }
+
+    #countdown {
+      font-size: 24px;
+      padding: 20px 30px;
+      background: #e8f5e9;
+      color: #1b5e20;
+      font-weight: bold;
+      border: 2px solid #2e7d32;
+    }
+    
+    #currentTime {
+      font-size: 26px;
+      font-weight: bold;
+      background: #d0f0d0;
+      color: #1b5e20;
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
